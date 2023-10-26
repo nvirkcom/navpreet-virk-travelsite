@@ -1,0 +1,79 @@
+// Variables
+$blue: #335576;
+$quick: 200ms;
+$sienna: #db7a4e;
+
+/* Globals and Resets */
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 75.625rem;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+
+  &__logo {
+    color: $blue;
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &__logo,
+  &__nav-link {
+    transition: $quick;
+  }
+
+  &__nav,
+  &__nav-list {
+    display: flex;
+  }
+
+  &__nav {
+    justify-content: space-between;
+  }
+
+  &__nav-link {
+    font-size: 0.875rem;
+    padding-bottom: 0.5rem;
+
+    &:hover {
+      color: $sienna;
+    }
+
+    &--active {
+      border-bottom: $sienna 0.125rem solid;
+    }
+  }
+
+  &__nav-list {
+    gap: 1.25rem;
+    list-style-type: none;
+  }
+}
