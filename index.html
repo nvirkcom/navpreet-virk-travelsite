@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta content="initial-scale=1.0, width=device-width" name="viewport" />
     <title>Home - Travel Site</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
+      <!-- Container -->
       <div class="container">
+        <!-- Header > Nav -->
         <nav class="header__nav">
           <h1>
             <a class="header__logo" href="/">Travel Site</a>
@@ -26,5 +30,55 @@
         </nav>
       </div>
     </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Main > Hero -->
+      <section class="hero">
+        <!-- Container -->
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h2 class="hero__heading">
+              Travelling Comes With Endless Discoveries
+            </h2>
+            <p class="hero__text">
+              Don't let your dreams be just dreams. Experience the world by
+              booking a vacation with us now.
+            </p>
+            <a class="hero__button" href="#"> Get started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main > Recommendations -->
+      <section class="recommendations">
+        <div class="container">
+          <h2 class="recommendations__heading">Recommendations</h2>
+          <ul class="recommendations__cards">
+            <li>
+              <a
+                class="recommendations__card recommendations__card--hawaii"
+                href="#"
+                >Hawaii</a
+              >
+            </li>
+            <li>
+              <a
+                class="recommendations__card recommendations__card--iceland"
+                href="#"
+                >Iceland</a
+              >
+            </li>
+            <li>
+              <a
+                class="recommendations__card recommendations__card--greece"
+                href="#"
+                >Greece</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

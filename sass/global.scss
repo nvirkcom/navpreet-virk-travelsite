@@ -1,14 +1,11 @@
-// Variables
-$blue: #335576;
-$quick: 200ms;
-$sienna: #db7a4e;
+// Imports
+@import "./variables";
 
 /* Globals and Resets */
 * {
   box-sizing: border-box;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1;
   margin: 0;
   padding: 0;
 }
@@ -31,7 +28,7 @@ body {
 
 /* Header */
 .header {
-  background-color: #ffffff;
+  background-color: $white;
   position: fixed;
   width: 100%;
 
