@@ -1,5 +1,5 @@
 // Imports
-@import "./variables";
+@use "variables" as *;
 
 /* Globals and Resets */
 * {
@@ -31,6 +31,7 @@ body {
   background-color: $white;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   &__logo {
     color: $blue;
@@ -38,7 +39,7 @@ body {
     font-weight: bold;
 
     &:hover {
-      opacity: 80%;
+      opacity: 75%;
     }
   }
 
