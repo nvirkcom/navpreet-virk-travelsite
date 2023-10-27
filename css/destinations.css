@@ -1,0 +1,45 @@
+/* Destination */
+.destination {
+  background-position: center;
+  background-size: cover;
+  padding: 5.5rem 0 6.125rem 0;
+}
+.destination--hawaii {
+  background-image: url("../assets/images/hawaii.jpg");
+}
+.destination__activity {
+  background-color: #fefaf5;
+  margin-top: 0.9375rem;
+  padding: 0.75rem 4.5rem;
+}
+.destination__activities {
+  margin-top: 1.5625rem;
+}
+.destination__activities, .destination__itinerary {
+  list-style-type: none;
+}
+.destination__card {
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem 0.9375rem 3.75rem;
+  text-align: center;
+}
+.destination__day {
+  border-bottom: #000000 2px solid;
+  display: block;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.destination__itinerary {
+  display: flex;
+  gap: 2.1875rem;
+  justify-content: center;
+}
+.destination__heading {
+  color: #ffffff;
+  font-size: 4.25rem;
+  font-weight: bold;
+}
+.destination__itinerary {
+  margin-top: 3.125rem;
+}

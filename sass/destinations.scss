@@ -1,0 +1,58 @@
+// Imports
+@use "variables" as *;
+
+/* Destination */
+.destination {
+  background-position: center;
+  background-size: cover;
+  padding: 5.5rem 0 6.125rem 0;
+
+  &--hawaii {
+    background-image: url("../assets/images/hawaii.jpg");
+  }
+
+  &__activity {
+    background-color: $powder;
+    margin-top: 0.9375rem;
+    padding: 0.75rem 4.5rem;
+  }
+
+  &__activities {
+    margin-top: 1.5625rem;
+  }
+
+  &__activities,
+  &__itinerary {
+    list-style-type: none;
+  }
+
+  &__card {
+    background-color: $white;
+    border-radius: 0.3125rem;
+    padding: 0.9375rem 0.9375rem 3.75rem;
+    text-align: center;
+  }
+
+  &__day {
+    border-bottom: $black 2px solid;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  &__itinerary {
+    display: flex;
+    gap: 2.1875rem;
+    justify-content: center;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 4.25rem;
+    font-weight: bold;
+  }
+
+  &__itinerary {
+    margin-top: 3.125rem;
+  }
+}
