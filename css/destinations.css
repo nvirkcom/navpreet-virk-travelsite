@@ -4,8 +4,14 @@
   background-size: cover;
   padding: 5.5rem 0 6.125rem 0;
 }
+.destination--greece {
+  background-image: url("../assets/images/greece.jpg");
+}
 .destination--hawaii {
   background-image: url("../assets/images/hawaii.jpg");
+}
+.destination--iceland {
+  background-image: url("../assets/images/iceland.jpg");
 }
 .destination__activity {
   background-color: #fefaf5;

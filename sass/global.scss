@@ -1,6 +1,22 @@
 // Imports
 @use "variables" as *;
 
+/* Main Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: 1s fadeIn;
+}
+
 /* Globals and Resets */
 * {
   box-sizing: border-box;

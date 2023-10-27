@@ -7,8 +7,16 @@
   background-size: cover;
   padding: 5.5rem 0 6.125rem 0;
 
+  &--greece {
+    background-image: url("../assets/images/greece.jpg");
+  }
+
   &--hawaii {
     background-image: url("../assets/images/hawaii.jpg");
+  }
+
+  &--iceland {
+    background-image: url("../assets/images/iceland.jpg");
   }
 
   &__activity {
