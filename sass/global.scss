@@ -1,20 +1,17 @@
 // Imports
+@use "mixins" as *;
 @use "variables" as *;
 
 /* Main Fade In Animation */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(-2rem);
   }
   to {
     opacity: 100%;
     transform: translateY(0);
   }
-}
-
-main {
-  animation: 1s fadeIn;
 }
 
 /* Globals and Resets */
@@ -27,7 +24,7 @@ main {
 }
 
 a {
-  color: #000000;
+  color: $black;
   text-decoration: none;
 }
 
@@ -35,16 +32,26 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+  animation: 1s fadeIn;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
 /* Container */
 .container {
-  max-width: 75.625rem;
+  max-width: 75rem;
   margin: auto;
-  padding: 1.25rem;
+  padding: 0 1.5625rem;
 }
 
 /* Header */
 .header {
   background-color: $white;
+  padding: 1.25rem 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -71,6 +78,11 @@ body {
 
   &__nav {
     justify-content: space-between;
+
+    @include break4p2 {
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
 
   &__nav-link {
@@ -95,14 +107,24 @@ body {
 /* Footer */
 .footer {
   background-color: $powder;
-  padding: 1.5625rem 0;
+  padding: 2.8125rem 0;
 
   &__column {
     &--social {
-      display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
+  }
+
+  &__column--social,
+  &__icons {
+    justify-content: space-between;
+  }
+
+  &__column--social,
+  &__icons,
+  &__row,
+  &__text-row {
+    display: flex;
   }
 
   &__heading {
@@ -116,14 +138,10 @@ body {
   }
 
   &__icons {
-    display: flex;
     gap: 1.875rem;
-    justify-content: space-between;
-    list-style-type: none;
   }
 
   &__row {
-    display: flex;
     gap: 5.9375rem;
     justify-content: center;
   }
@@ -143,7 +161,23 @@ body {
   }
 
   &__text-row {
-    display: flex;
     gap: 1.875rem;
+
+    @include break4p2 {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  @include break9 {
+    &__icons {
+      justify-content: start;
+      margin-top: 1.5rem;
+    }
+
+    &__row {
+      flex-direction: column;
+      gap: 4rem;
+    }
   }
 }

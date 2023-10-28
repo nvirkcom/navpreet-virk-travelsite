@@ -1,0 +1,17 @@
+@mixin break4p2 {
+  @media (max-width: 427px) {
+    @content;
+  }
+}
+
+@mixin break8 {
+  @media (max-width: 799px) {
+    @content;
+  }
+}
+
+@mixin break9 {
+  @media (max-width: 899px) {
+    @content;
+  }
+}

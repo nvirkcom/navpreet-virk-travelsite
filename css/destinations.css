@@ -2,7 +2,7 @@
 .destination {
   background-position: center;
   background-size: cover;
-  padding: 5.5rem 0 6.125rem 0;
+  padding: 6.75rem 0 7.375rem 0;
 }
 .destination--greece {
   background-image: url("../assets/images/greece.jpg");
@@ -21,9 +21,6 @@
 .destination__activities {
   margin-top: 1.5625rem;
 }
-.destination__activities, .destination__itinerary {
-  list-style-type: none;
-}
 .destination__card {
   background-color: #ffffff;
   border-radius: 0.3125rem;
@@ -40,6 +37,11 @@
   display: flex;
   gap: 2.1875rem;
   justify-content: center;
+}
+@media (max-width: 899px) {
+  .destination__itinerary {
+    flex-direction: column;
+  }
 }
 .destination__heading {
   color: #ffffff;

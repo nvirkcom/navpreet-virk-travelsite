@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+main {
+  background-color: $powder;
+}
+
+/* Form */
+.form {
+  margin: auto;
+  max-width: 36rem;
+  padding: 8rem 0 6rem;
+
+  &__button {
+    background-color: $sienna;
+    border: 0;
+    color: $powder;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    transition: $quick;
+
+    &:hover {
+      background-color: $powder;
+      color: $sienna;
+      outline: $sienna 2px solid;
+    }
+  }
+
+  &__button,
+  &__input,
+  &__label,
+  &__select,
+  &__textarea {
+    display: block;
+  }
+
+  &__heading {
+    color: $blue;
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    border: 0;
+    outline: $blue 0.0625rem solid;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+
+    &:focus {
+      outline: $blue 0.125rem solid;
+    }
+  }
+
+  &__label {
+    color: $blue;
+    font-size: 0.75rem;
+    margin: 2rem 0 0.75rem;
+    text-transform: uppercase;
+  }
+}

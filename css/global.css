@@ -1,7 +1,7 @@
 /* Main Fade In Animation */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(-2rem);
   }
   to {
@@ -9,10 +9,6 @@
     transform: translateY(0);
   }
 }
-main {
-  animation: 1s fadeIn;
-}
-
 /* Globals and Resets */
 * {
   box-sizing: border-box;
@@ -31,16 +27,26 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+  animation: 1s fadeIn;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
 /* Container */
 .container {
-  max-width: 75.625rem;
+  max-width: 75rem;
   margin: auto;
-  padding: 1.25rem;
+  padding: 0 1.5625rem;
 }
 
 /* Header */
 .header {
   background-color: #ffffff;
+  padding: 1.25rem 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -62,6 +68,12 @@ body {
 .header__nav {
   justify-content: space-between;
 }
+@media (max-width: 427px) {
+  .header__nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .header__nav-link {
   font-size: 0.875rem;
   padding-bottom: 0.5rem;
@@ -80,12 +92,16 @@ body {
 /* Footer */
 .footer {
   background-color: #fefaf5;
-  padding: 1.5625rem 0;
+  padding: 2.8125rem 0;
 }
 .footer__column--social {
-  display: flex;
   flex-direction: column;
+}
+.footer__column--social, .footer__icons {
   justify-content: space-between;
+}
+.footer__column--social, .footer__icons, .footer__row, .footer__text-row {
+  display: flex;
 }
 .footer__heading {
   color: #335576;
@@ -96,13 +112,9 @@ body {
   height: 1.375rem;
 }
 .footer__icons {
-  display: flex;
   gap: 1.875rem;
-  justify-content: space-between;
-  list-style-type: none;
 }
 .footer__row {
-  display: flex;
   gap: 5.9375rem;
   justify-content: center;
 }
@@ -119,6 +131,21 @@ body {
   margin-top: 0.625rem;
 }
 .footer__text-row {
-  display: flex;
   gap: 1.875rem;
+}
+@media (max-width: 427px) {
+  .footer__text-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 899px) {
+  .footer__icons {
+    justify-content: start;
+    margin-top: 1.5rem;
+  }
+  .footer__row {
+    flex-direction: column;
+    gap: 4rem;
+  }
 }

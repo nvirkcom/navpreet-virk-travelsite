@@ -1,4 +1,5 @@
 // Imports
+@use "mixins" as *;
 @use "variables" as *;
 
 /* Hero */
@@ -28,14 +29,22 @@
 
   &__container {
     background-image: url("../assets/images/hero.png");
-    background-position: right 1.25rem top 5.9375rem;
+    background-position: right 1.25rem top 6.5625rem;
     background-repeat: no-repeat;
     background-size: 26.5625rem 22.25rem;
-    padding: 9rem 1.25rem;
+    padding: 10.25rem 1.25rem;
+
+    @include break8 {
+      background-image: none;
+    }
   }
 
   &__content {
     width: 45%;
+
+    @include break8 {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -51,7 +60,7 @@
 
 /* Recommendations */
 .recommendations {
-  padding: 0.9375rem 0 3.75rem 0;
+  padding: 2.1875rem 0 5rem 0;
 
   &__card {
     align-items: end;
@@ -81,6 +90,14 @@
     &:hover {
       scale: 110%;
     }
+
+    @include break9 {
+      width: 100%;
+
+      &:hover {
+        scale: 100%;
+      }
+    }
   }
 
   &__card,
@@ -99,6 +116,10 @@
     justify-content: center;
     list-style-type: none;
     margin-top: 1.875rem;
+
+    @include break9 {
+      flex-direction: column;
+    }
   }
 
   &__heading {
