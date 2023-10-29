@@ -34,6 +34,11 @@
     background-size: 26.5625rem 22.25rem;
     padding: 10.25rem 1.25rem;
 
+    @include break4p2 {
+      padding-bottom: 8rem;
+      padding-top: 12rem;
+    }
+
     @include break8 {
       background-image: none;
     }

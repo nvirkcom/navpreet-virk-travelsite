@@ -4,6 +4,11 @@
   background-size: cover;
   padding: 6.75rem 0 7.375rem 0;
 }
+@media (max-width: 899px) {
+  .destination {
+    padding-top: 10rem;
+  }
+}
 .destination--greece {
   background-image: url("../assets/images/greece.jpg");
 }

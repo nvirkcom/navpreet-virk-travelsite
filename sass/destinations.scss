@@ -8,6 +8,10 @@
   background-size: cover;
   padding: 6.75rem 0 7.375rem 0;
 
+  @include break9 {
+    padding-top: 10rem;
+  }
+
   &--greece {
     background-image: url("../assets/images/greece.jpg");
   }

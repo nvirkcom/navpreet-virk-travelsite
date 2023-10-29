@@ -94,7 +94,7 @@ ul {
     }
 
     &--active {
-      border-bottom: $sienna 0.125rem solid;
+      border-bottom: $sienna 0.1875rem solid;
     }
   }
 
@@ -139,11 +139,24 @@ ul {
 
   &__icons {
     gap: 1.875rem;
+
+    @include break9 {
+      justify-content: start;
+      margin-top: 1.5rem;
+    }
   }
 
   &__row {
     gap: 5.9375rem;
     justify-content: center;
+
+    @include break9 {
+      flex-direction: column;
+    }
+
+    @include break8 {
+      gap: 3rem;
+    }
   }
 
   &__subheading {
@@ -163,21 +176,13 @@ ul {
   &__text-row {
     gap: 1.875rem;
 
-    @include break4p2 {
+    @include break5 {
       flex-direction: column;
       gap: 0;
     }
-  }
 
-  @include break9 {
-    &__icons {
-      justify-content: start;
-      margin-top: 1.5rem;
-    }
-
-    &__row {
-      flex-direction: column;
-      gap: 4rem;
+    @include break4p2 {
+      gap: 0;
     }
   }
 }

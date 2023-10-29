@@ -26,6 +26,12 @@
   background-size: 26.5625rem 22.25rem;
   padding: 10.25rem 1.25rem;
 }
+@media (max-width: 427px) {
+  .hero__container {
+    padding-bottom: 8rem;
+    padding-top: 12rem;
+  }
+}
 @media (max-width: 799px) {
   .hero__container {
     background-image: none;

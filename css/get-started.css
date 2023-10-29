@@ -8,6 +8,11 @@ main {
   max-width: 36rem;
   padding: 8rem 0 6rem;
 }
+@media (max-width: 899px) {
+  .form {
+    padding: 10rem 0 4rem;
+  }
+}
 .form__button {
   background-color: #db7a4e;
   border: 0;
