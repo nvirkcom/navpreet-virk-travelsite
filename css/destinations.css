@@ -28,6 +28,7 @@
 }
 .destination__card {
   background-color: #ffffff;
+  border: 0.0625rem rgba(0, 0, 0, 0.2) solid;
   border-radius: 0.3125rem;
   padding: 0.9375rem 0.9375rem 3.75rem;
   text-align: center;
